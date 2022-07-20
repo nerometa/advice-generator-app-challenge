@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/solution-advice-generator-app-with-angular-bootstrap-scss-CkjY71DifG)
 - [Live Site URL](https://nerometa.github.io/advice-generator-app-challenge/)
 
 ## My process
