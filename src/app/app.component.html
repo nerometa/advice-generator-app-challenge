@@ -1,0 +1,41 @@
+<main
+  class="container d-flex flex-column justify-content-center align-items-center h-100"
+>
+  <section class="mx-auto card rounded-4 shadow position-relative">
+    <div class="card-body text-center px-4">
+      <h1 class="card-title text-uppercase h-5 py-3">
+        Advice #{{ !quotes ? "" : quotes!.slip.id }}
+      </h1>
+      <q class="card-text" role="text">{{
+        !quotes ? "Click to get advice" : quotes!.slip.advice
+      }}</q>
+    </div>
+    <div class="card-footer border-0 d-flex justify-content-center rounded-4">
+      <img
+        src="assets/images/pattern-divider-mobile.svg"
+        class="div-mobile pb-5 mb-2"
+        alt="divider"
+      />
+      <img
+        src="assets/images/pattern-divider-desktop.svg"
+        class="div-desktop pb-5 mb-2"
+        alt="divider"
+      />
+      <button
+        type="button"
+        class="btn shuffle rounded-circle p-3 position-absolute"
+        title="Shuffle for more advice"
+        (click)="shuffle()"
+      >
+        <img src="assets/images/icon-dice.svg" alt="shuffle" />
+      </button>
+    </div>
+  </section>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://github.com/nerometa" target="_blank">nerometa</a>.
+  </footer>
+</main>
