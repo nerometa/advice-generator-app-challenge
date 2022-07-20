@@ -105,10 +105,36 @@ The `(click)` here is one of many target events. It, of course, listens for the 
 
 Now, if you're working with API using Angular framework, `HttpClient` will help you with that. It's almost like Fetch API in JavaScript (I might be wrong, please take this with a grain of salt.)
 
+---
+
+Big, BIG think I learned how to do is deploying the app itself. I spent like 3-4 hours trying every single tutorial I can find. Found out that I need to use [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) for this, although some of the code didn't work.
+
+Firstly, I had to `git remote origin` my project and then push it. After that, do `npm install angular-cli-ghpages`.
+
+To actually build an app for production, I used this command: `ng build --configuration=production --base-href="https://<username>.github.io/<your-github-project-name-here>/"`. Make sure you replace `<username>` and `<your-github-project-name-here>` with yours.
+
+Finally, use this command: `ngh --dir dist` or `ngh --dir dist/<project-name>` if you build with subfolder in it.
+
+---
+
+A little thing: Before you build your app, whatever source is in your `<img>` tag, make sure **NOT** to write your filepath like this:
+
+```html
+<img src="../assets/icon.svg">
+```
+
+Instead, do this:
+
+```html
+<img src="assets/icon.svg">
+```
+your app will still find your image or icon, even after you build it.
+
 ### Useful resources
 
 - [Angular HttpClient](https://angular.io/api/common/http/HttpClient) - This is a staple for working with API in Angular.
 - [Angular Event Binding](https://angular.io/guide/event-binding-concepts) - To this day, I'm still trying to understand how it works. What is input and output, how to pass data between child and parent. How to bind data, etc.
+- [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) - If you wanna deploy your Angular app on Github Pages, use this thing.
 
 ## Author
 
