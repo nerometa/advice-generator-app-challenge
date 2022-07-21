@@ -106,7 +106,7 @@ Now, if you're working with API using Angular framework, `HttpClient` will help 
 
 ---
 
-Big, BIG think I learned how to do is deploying the app itself. I spent like 3-4 hours trying every single tutorial I can find. Found out that I need to use [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) for this, although some of the code didn't work.
+Big, BIG thing I learned how to do is deploying the app itself. I spent like 3-4 hours trying every single tutorial I can find. Found out that I need to use [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) for this, although some of the code didn't work.
 
 Firstly, I had to `git remote origin` my project and then push it. After that, do `npm install angular-cli-ghpages`.
 
